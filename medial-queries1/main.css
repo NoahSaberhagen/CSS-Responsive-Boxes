@@ -1,7 +1,7 @@
 body {
   background: #001B2E;           
   margin: 2vh;                      
-  max-height: 100vh;                /* removes vertical scrolling for clean look */
+  max-height: 100vh;
 }
 
 .main {                             
