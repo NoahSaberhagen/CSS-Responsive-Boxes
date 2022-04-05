@@ -6,10 +6,16 @@ body {
 
 .main {
   background: #294C60;
-  display: flex;
+  display: flex;                        /* .main is the lowest flex container for the entire page */
   flex-direction: column;
   min-height: 96vh;
   justify-content: space-around;
+}
+
+[class^="container-"] {                 /* all flex containers within .main */
+  display: flex;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .a, .b, .c, .d, .e, .f, .g, .h {
@@ -17,11 +23,8 @@ body {
   margin: 1vh;
 }
 
-[class^="container-"] {
-  display: flex;
-  font-size: 3rem;
-  text-align: center;
-}
+/* --------------------------------------------------------------- */
+/* desktop layout according to wireframe */
 
 .container-1, .a {
   flex-grow: 1;
@@ -43,6 +46,9 @@ body {
 .h {
   flex-grow: 1;
 }
+
+/* --------------------------------------------------------------- */
+/* mobile layout according to wireframe */
 
 @media screen and (max-width: 600px) {
   .container-1 {
