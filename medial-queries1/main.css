@@ -4,24 +4,27 @@ body {
   max-height: 100vh;                /* removes vertical scrolling for clean look */
 }
 
-.main {
+.main {                             
   background: #294C60;
-  display: flex;                    /* lowest-level flexbox; includes all content divs */
+  display: flex;                    /* .main is the lowest flex container for the entire page */         
   flex-direction: column;           
   min-height: 96vh;
   justify-content: space-around;
 }
 
-.a, .b, .c {                        /* for consistent style */
-  background: #ADB6C4;
-  margin: 1vh;
-}
-
-[class^="container-"] {
+[class^="container-"] {             /* all flex containers within .main */
   display: flex;
   font-size: 3rem;
   text-align: center;
 }
+
+.a, .b, .c {
+  background: #ADB6C4;
+  margin: 1vh;
+}
+
+/* --------------------------------------------------------------- */
+/* desktop layout according to wireframe */
 
 .container-1 {
   flex-grow: 2;
@@ -29,7 +32,7 @@ body {
 }
 
 .a {
-  width: 100%;
+  width: 100%;          /* not sure why this was necessary */
 }
 
 .container-2 {
@@ -43,6 +46,9 @@ body {
 .c {
   flex-grow: 1;
 }
+
+/* --------------------------------------------------------------- */
+/* mobile layout according to wireframe */
 
 @media screen and (max-width: 600px) {
   .container-1 {
