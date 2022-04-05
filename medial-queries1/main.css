@@ -1,20 +1,19 @@
 body {
-  background: #001B2E;
-  margin: 2vh;
-  max-height: 100vh;
+  background: #001B2E;           
+  margin: 2vh;                      
+  max-height: 100vh;                /* removes vertical scrolling for clean look */
 }
 
 .main {
   background: #294C60;
-  display: flex;
-  flex-direction: column;
+  display: flex;                    /* lowest-level flexbox; includes all content divs */
+  flex-direction: column;           
   min-height: 96vh;
   justify-content: space-around;
 }
 
-.a, .b, .c {
+.a, .b, .c {                        /* for consistent style */
   background: #ADB6C4;
-  box-sizing: border-box;
   margin: 1vh;
 }
 
